@@ -1,0 +1,1 @@
+const mongoose = require('mongoose');const userSchema = new mongoose.Schema({ email: { type: String, required: true, unique: true }, password: { type: String, required: true }, profileName: String, myList: [String], viewingHistory: [{ movieId: String, timestamp: Date, progress: Number }], subscriptionPlan: String });module.exports = mongoose.model('User', userSchema);
