@@ -1,0 +1,1 @@
+const express = require('express');const userRoutes = require('./userRoutes');const movieRoutes = require('./movieRoutes');const router = express.Router();router.use('/users', userRoutes);router.use('/movies', movieRoutes);module.exports = router;
